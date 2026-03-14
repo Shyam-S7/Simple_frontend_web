@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Book a Table | Briyani Payaluga</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Briyani <span>Payaluga</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <h1>Contact Us</h1>
+        <p>Book a table or get in touch</p>
+    </div>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="contact-grid">
+
+                    <!-- Reservation Form -->
+                    <div class="form-card">
+                        <h2>Book a Table</h2>
+                        <p>Fill in the details and we'll confirm your reservation.</p>
+
+                        <form action="#" method="get">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="+91" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Time</label>
+                                    <input type="time" id="time" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guests">Guests</label>
+                                    <select id="guests">
+                                        <option value="1">1 Person</option>
+                                        <option value="2" selected>2 Persons</option>
+                                        <option value="3">3 Persons</option>
+                                        <option value="4">4 Persons</option>
+                                        <option value="5">5 Persons</option>
+                                        <option value="6+">6+ Persons</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="branch">Branch</label>
+                                    <select id="branch">
+                                        <option value="madurai">Madurai (Main)</option>
+                                        <option value="chennai">Chennai</option>
+                                        <option value="coimbatore">Coimbatore</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn" style="width: 100%;">Submit Reservation</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-card">
+                        <h3>Get In Touch</h3>
+
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>123 Main Road, Madurai, Tamil Nadu</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@briyanipayaluga.in</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Working Hours</strong>
+                                <p>Open All Days</p>
+                                <p>10:00 AM – 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Briyani Payaluga</h4>
+                    <p>Authentic briyani & home-style meals for the whole family.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Open All Days</p>
+                    <p>10:00 AM – 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Briyani Payaluga. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

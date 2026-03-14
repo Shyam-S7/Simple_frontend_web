@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Briyani Payaluga</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 22px;
+        }
+        .food-card {
+            background: var(--white);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+        }
+        .food-card:hover {
+            transform: translateY(-3px);
+        }
+        .food-card-img {
+            height: 180px;
+            overflow: hidden;
+            background: #eee;
+        }
+        .food-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .food-card-body {
+            padding: 16px;
+        }
+        .food-card-body h4 {
+            font-family: 'Merriweather', serif;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: var(--brown);
+        }
+        .food-card-body p {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .food-card-body .price {
+            color: var(--red);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .food-card-body .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .tag-veg { background: #e8f5e9; color: #2e7d32; }
+        .tag-nonveg { background: #fce4ec; color: #c62828; }
+        .tag-special { background: #fff3e0; color: #e65100; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Briyani <span>Payaluga</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <h1>Our Menu</h1>
+        <p>Fresh food. Real taste. Every day.</p>
+    </div>
+
+    <main>
+        <section>
+            <div class="container">
+
+                <!-- ========== MORNING BREAKFAST ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-sun"></i> Morning Breakfast</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Idli_Sambar.jpg/800px-Idli_Sambar.jpg" alt="Idly">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Idly (2 pcs)</h4>
+                                <p>Soft steamed rice cakes with sambar & chutney</p>
+                                <div class="price">₹40</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Masala_Dosa_2.jpg/800px-Masala_Dosa_2.jpg" alt="Masala Dosa">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Masala Dosa</h4>
+                                <p>Crispy dosa with potato masala filling</p>
+                                <div class="price">₹70</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pongal_sweet.JPG/800px-Pongal_sweet.JPG" alt="Pongal">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Pongal</h4>
+                                <p>Pepper-flavoured rice & lentil porridge</p>
+                                <div class="price">₹60</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Medu_vada.jpg/800px-Medu_vada.jpg" alt="Vada">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Vada (2 pcs)</h4>
+                                <p>Crispy fried lentil doughnuts</p>
+                                <div class="price">₹40</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Upma1.JPG/800px-Upma1.JPG" alt="Upma">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Upma</h4>
+                                <p>Semolina cooked with vegetables & mustard seeds</p>
+                                <div class="price">₹50</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Puri2.jpg/800px-Puri2.jpg" alt="Poori">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Poori (3 pcs)</h4>
+                                <p>Deep-fried wheat bread with potato curry</p>
+                                <div class="price">₹65</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== ALL BRIYANI ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-bowl-rice"></i> Briyani</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vegetable_Biryani.jpg/800px-Vegetable_Biryani.jpg" alt="Vegetable Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-veg">Veg</span>
+                                <h4>Vegetable Briyani</h4>
+                                <p>Mixed vegetables with fragrant basmati rice</p>
+                                <div class="price">₹150</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Paneer_Biryani.jpg/800px-Paneer_Biryani.jpg" alt="Paneer Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-veg">Veg</span>
+                                <h4>Paneer Briyani</h4>
+                                <p>Cottage cheese briyani with cashews & raisins</p>
+                                <div class="price">₹180</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mushroom_biryani.jpg/800px-Mushroom_biryani.jpg" alt="Mushroom Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-veg">Veg</span>
+                                <h4>Mushroom Briyani</h4>
+                                <p>Button mushrooms in aromatic spiced rice</p>
+                                <div class="price">₹170</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vegetable_Biryani.jpg/800px-Vegetable_Biryani.jpg" alt="Soya Chunk Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-veg">Veg</span>
+                                <h4>Soya Chunk Briyani</h4>
+                                <p>Protein-rich soya chunks in biryani masala</p>
+                                <div class="price">₹140</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chicken_Biryani.jpg/800px-Chicken_Biryani.jpg" alt="Chicken Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-nonveg">Non-Veg</span>
+                                <h4>Chicken Briyani</h4>
+                                <p>Tender chicken with aromatic spiced rice</p>
+                                <div class="price">₹220</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Mutton_Biryani.jpg/800px-Mutton_Biryani.jpg" alt="Mutton Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-nonveg">Non-Veg</span>
+                                <h4>Mutton Briyani</h4>
+                                <p>Slow-cooked mutton in dum-style briyani</p>
+                                <div class="price">₹320</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Egg_biryani.jpg/800px-Egg_biryani.jpg" alt="Egg Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-nonveg">Non-Veg</span>
+                                <h4>Egg Briyani</h4>
+                                <p>Boiled egg briyani served with raita</p>
+                                <div class="price">₹160</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Prawn_biryani.jpg/800px-Prawn_biryani.jpg" alt="Prawns Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-nonveg">Non-Veg</span>
+                                <h4>Prawns Briyani</h4>
+                                <p>Fresh prawns layered with basmati rice</p>
+                                <div class="price">₹350</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Hyderabadi_Biryani.jpg/800px-Hyderabadi_Biryani.jpg" alt="Payaluga Special Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-special">Special</span>
+                                <h4>Payaluga Special Briyani</h4>
+                                <p>Our signature briyani with extra masala & ghee</p>
+                                <div class="price">₹380</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Hyderabadi_Biryani.jpg/800px-Hyderabadi_Biryani.jpg" alt="Family Pack Briyani">
+                            </div>
+                            <div class="food-card-body">
+                                <span class="tag tag-special">Special</span>
+                                <h4>Family Pack Briyani</h4>
+                                <p>Serves 4-5 persons with raita & brinjal curry</p>
+                                <div class="price">₹850</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== SEA FOOD ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-fish"></i> Sea Food</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Fish_fry_Kerala.jpg/800px-Fish_fry_Kerala.jpg" alt="Fish Fry">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Fish Fry</h4>
+                                <p>Crispy fried fish with spicy masala coating</p>
+                                <div class="price">₹250</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Prawns_Fry.jpg/800px-Prawns_Fry.jpg" alt="Prawns Fry">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Prawns Fry</h4>
+                                <p>Golden fried prawns with pepper seasoning</p>
+                                <div class="price">₹300</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Fish_Curry.jpg/800px-Fish_Curry.jpg" alt="Fish Curry">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Fish Curry</h4>
+                                <p>Tangy fish curry with tamarind & coconut</p>
+                                <div class="price">₹220</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Crab_Masala.jpg/800px-Crab_Masala.jpg" alt="Crab Masala">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Crab Masala</h4>
+                                <p>Spicy crab cooked in onion-tomato gravy</p>
+                                <div class="price">₹380</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== MEAT ITEMS ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-utensils"></i> Meat Items</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chicken_65.jpg/800px-Chicken_65.jpg" alt="Chicken Fry">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Chicken Fry</h4>
+                                <p>Deep fried chicken with south Indian spices</p>
+                                <div class="price">₹200</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chettinad_Chicken.jpg/800px-Chettinad_Chicken.jpg" alt="Mutton Chukka">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Mutton Chukka</h4>
+                                <p>Dry-fried mutton with pepper & fennel</p>
+                                <div class="price">₹320</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Chicken_curry.jpg/800px-Chicken_curry.jpg" alt="Chicken Gravy">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Chicken Gravy</h4>
+                                <p>Rich chicken curry, home-style preparation</p>
+                                <div class="price">₹180</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Mutton_curry.jpg/800px-Mutton_curry.jpg" alt="Mutton Curry">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Mutton Curry</h4>
+                                <p>Tender mutton in thick spiced gravy</p>
+                                <div class="price">₹280</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== NIGHT SPECIALS ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-moon"></i> Night Specials</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chicken_fried_rice.jpg/800px-Chicken_fried_rice.jpg" alt="Chicken Fried Rice">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Chicken Fried Rice</h4>
+                                <p>Wok-tossed rice with chicken & vegetables</p>
+                                <div class="price">₹180</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Egg_Noodles.jpg/800px-Egg_Noodles.jpg" alt="Egg Noodles">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Egg Noodles</h4>
+                                <p>Stir-fried noodles with egg & mixed veggies</p>
+                                <div class="price">₹150</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Veg_fried_rice.jpg/800px-Veg_fried_rice.jpg" alt="Veg Fried Rice">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Veg Fried Rice</h4>
+                                <p>Vegetable fried rice with soy sauce</p>
+                                <div class="price">₹140</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Chow_mein_1_by_yuen.jpg/800px-Chow_mein_1_by_yuen.jpg" alt="Chicken Noodles">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Chicken Noodles</h4>
+                                <p>Spicy chicken noodles with bell peppers</p>
+                                <div class="price">₹170</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== DESSERTS ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-ice-cream"></i> Desserts</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Gulab_jamun_%28homemade%29.jpg/800px-Gulab_jamun_%28homemade%29.jpg" alt="Gulab Jamun">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Gulab Jamun (2 pcs)</h4>
+                                <p>Warm milk dumplings in sugar syrup</p>
+                                <div class="price">₹60</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Ice_Cream_dessert_02.jpg/800px-Ice_Cream_dessert_02.jpg" alt="Ice Cream">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Ice Cream</h4>
+                                <p>Vanilla / Chocolate / Butterscotch</p>
+                                <div class="price">₹80</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rasmalai.jpg/800px-Rasmalai.jpg" alt="Rasmalai">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Rasmalai</h4>
+                                <p>Soft cheese in saffron milk, served chilled</p>
+                                <div class="price">₹90</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== CAKES ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-birthday-cake"></i> Cakes</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Black_Forest_gateau.jpg/800px-Black_Forest_gateau.jpg" alt="Black Forest Cake">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Black Forest (Slice)</h4>
+                                <p>Rich chocolate cake with cream & cherries</p>
+                                <div class="price">₹120</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Butterscotch_cake.jpg/800px-Butterscotch_cake.jpg" alt="Butterscotch Cake">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Butterscotch (Slice)</h4>
+                                <p>Creamy butterscotch sponge cake</p>
+                                <div class="price">₹110</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Red_Velvet_Cake_Waldorf_Astoria.jpg/800px-Red_Velvet_Cake_Waldorf_Astoria.jpg" alt="Red Velvet Cake">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Red Velvet (Slice)</h4>
+                                <p>Classic red velvet cake with cream cheese</p>
+                                <div class="price">₹130</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== FRESH JUICES ========== -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-glass-water"></i> Fresh Juices & Drinks</h3>
+                    <div class="menu-grid">
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Mango_Lassi.jpg/800px-Mango_Lassi.jpg" alt="Mango Juice">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Fresh Mango Juice</h4>
+                                <p>100% natural Alphonso mango pulp</p>
+                                <div class="price">₹80</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Watermelon_juice.jpg/800px-Watermelon_juice.jpg" alt="Watermelon Juice">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Watermelon Juice</h4>
+                                <p>Refreshing watermelon, no sugar added</p>
+                                <div class="price">₹60</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Orangejuice.jpg/800px-Orangejuice.jpg" alt="Orange Juice">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Fresh Orange Juice</h4>
+                                <p>Freshly squeezed sweet oranges</p>
+                                <div class="price">₹70</div>
+                            </div>
+                        </div>
+
+                        <div class="food-card">
+                            <div class="food-card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Mango_Lassi.jpg/800px-Mango_Lassi.jpg" alt="Lassi">
+                            </div>
+                            <div class="food-card-body">
+                                <h4>Lassi</h4>
+                                <p>Sweet / Salt / Mango yogurt drink</p>
+                                <div class="price">₹60</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Briyani Payaluga</h4>
+                    <p>Authentic briyani & home-style meals for the whole family.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Open All Days</p>
+                    <p>10:00 AM – 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Briyani Payaluga. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
